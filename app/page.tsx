@@ -1,5 +1,5 @@
 const Home = () => {
-  return <div>pdfile is under construction!</div>;
+  return <div></div>;
 };
 
 export default Home;

@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="">
+    <nav className="bg-grayishblue fixed w-full top-0 left-0 z-20 border-b border-gray-200 max-w-screen flex flex-wrap items-center justify-between mx-auto p-6">
       <div>
         <Link href="/">
-          <span>PDFile</span>
+          <span className="font-recursive text-lightergray self-center text-3xl font-semibold whitespace-nowrap">PDFile</span>
         </Link>
       </div>
 
