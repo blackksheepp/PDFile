@@ -9,7 +9,7 @@ export const metadata = {
 const RootLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-primary-light dark:bg-primary-dark">
         <main className="app">
           <Navbar />
           {children}

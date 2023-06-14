@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "grayishblue": "#2B2D42",
-        "lightergray": "#BCBEDC",
+        "navbar": "#2B2D42",
+        "primary-light": "#EDF1F5",
+        "primary-dark": "#0B1622",
+        "primary-light-text": "#BCBEDC",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -19,7 +21,7 @@ module.exports = {
     },
     fontFamily: {
       recursive: "Recursive",
-    }
+    },
   },
   plugins: [],
 };
