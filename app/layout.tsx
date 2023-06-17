@@ -1,4 +1,6 @@
 import Navbar from "@components/Navbar";
+import Providers from "@components/ThemeProvider";
+import ThemeChanger from "@components/ThemeChanger";
 import "../styles/global.css";
 
 export const metadata = {
@@ -10,10 +12,13 @@ const RootLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <html lang="en">
       <body className="bg-primary-light dark:bg-primary-dark">
-        <main className="app">
-          <Navbar />
-          {children}
-        </main>
+        <Providers>
+          <main className="app">
+            <Navbar />
+            <ThemeChanger />
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   );
