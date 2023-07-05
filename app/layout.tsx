@@ -1,5 +1,5 @@
 import Navbar from "@components/Navbar";
-import Providers from "@components/ThemeProvider";
+import Providers from "@components/Providers";
 import ThemeChanger from "@components/ThemeChanger";
 import "../styles/global.css";
 
@@ -12,13 +12,13 @@ const RootLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <html lang="en">
       <body className="bg-primary-light dark:bg-primary-dark">
-        <Providers>
-          <main className="app">
-            <Navbar />
-            <ThemeChanger />
-            {children}
-          </main>
-        </Providers>
+          <Providers>
+            <main className="app">
+              <Navbar />
+              <ThemeChanger />
+              {children}
+            </main>
+          </Providers>
       </body>
     </html>
   );

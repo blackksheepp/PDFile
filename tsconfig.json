@@ -35,7 +35,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/Navbar.tsx"
+    "components/Navbar.tsx",
+    "app/api/auth/[...nextauth]/route.js"
   ],
   "exclude": ["node_modules"]
 }
